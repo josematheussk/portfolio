@@ -9,7 +9,7 @@ export default function Footer() {
         </div>
 
         <div className="source-code">
-          <a href="https://github.com/josematheussk/portifolio">
+          <a href="https://github.com/josematheussk/portfolio">
             <p>Código-fonte</p>
             <img src={iconpathgray} alt="" />
           </a>
