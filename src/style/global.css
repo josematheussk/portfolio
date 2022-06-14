@@ -1,0 +1,798 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font: 300 16px 'IBM Plex Mono', sans-serif;
+    color: #fff;
+}
+
+* p{
+    margin: 0;
+}
+
+.bg-navBG{
+    padding: 1rem 2rem;
+    background: rgba(23, 23, 23, 75%);
+    border-bottom:1px solid #666666;
+    backdrop-filter: blur(10px);
+}
+
+.collapse-wrapper{
+    justify-content: end;
+}
+
+.nav-wrapper{
+    background: rgba(23, 23, 23, 75%);
+    border-bottom:1px solid #666666;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(10px);
+}
+
+.container-navbar{
+    padding: 0 10rem;
+    max-width: 175rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-navbar img{
+    width: 25px;
+    height: 20px;
+}
+.container-navbar p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.left-options{
+    display: flex;
+    font-size: 22px;
+    font-weight: 400;
+    gap: 1rem;
+    align-items: center;
+}
+
+.right-options{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.hamburger, .navmenu-wrapper{
+    display: none;
+}
+
+.container-main-home{
+    background-image: url("../images/gridbackground.svg");
+    background-position: center;
+    padding: 20rem 2rem;
+    max-width: 500rem;
+    width: 100%;
+
+}
+
+.intro{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.type-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.typing{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    margin: 0 auto;
+    
+}
+
+.intro img{
+    width: 120px;
+    height: 100px;
+}
+
+.container-stacks{
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #0A0A0A;
+    height: 100%;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500rem;
+    border-top: 1px solid #666666;
+}
+
+#stacks-title{
+    font-size: 1.5rem;
+}
+
+.tech-icon-wrapper{
+    max-width: 35rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.tech-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.tech-icon p{
+    font-size: 12px;
+    text-align: center;
+}
+
+.tech-icon-wrapper img{
+    width: 50px;
+    height: 50px;
+}
+
+.container-about{
+    border-top: 1px solid #666666;
+    background: #171717;
+    margin: 0 auto;
+    padding: 5rem;
+    max-height: 100rem;
+    height: 100%;
+}
+
+.about-wrapper{
+    margin: 0 auto;
+    gap: 2rem;
+    max-width: 75rem;
+    width: 100%;
+    max-height: 100rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-title p{
+    text-align: center;
+    font-size: 40px;
+}
+
+.image-wrapper img{
+    width: 250px;
+    height: 250px;
+}
+
+.text-wrapper p{
+    font-size: 22px;
+}
+
+.links-wrapper{
+    display: flex;
+    gap: 2rem;
+}
+
+.links-wrapper p{
+    color: #0066AF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.links-wrapper a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.links-wrapper img{
+    width: 10px;
+    height: 10px;
+}
+
+.linkedin-wrapper{
+
+    flex-direction: row;
+    display: flex;
+    gap: 0.5rem;
+    justify-items: center;
+    align-items: center;  
+
+}
+
+.github-wrapper{
+    display: flex;
+    gap: 0.5rem;
+    justify-items: center;
+    align-items: center;  
+}
+
+.graduation-container{
+    background-color: #0A0A0A;
+    height: 100%;
+    max-height: 100vh;
+    width: 100%;
+    border-top: 1px solid #666666;
+    padding: 2rem 2rem 4.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.graduation-container p{
+    font-size: 40px;
+    text-align: center;
+}
+
+.graduation-wrapper{
+    display: flex;
+    width: auto;
+    justify-content: center;
+    background: #171717;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.graduation-logo{
+    display: flex;
+    align-items: center;
+}
+
+.graduation-logo img{
+    height: 50px;
+}
+
+.grad-separator{
+    height: auto;
+    width: 1px;
+    background: #666666;
+}
+
+.graduation-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 15px;
+    text-align: start;
+}
+.graduation-info p{
+    text-align: start;
+}
+
+#graduation-uni{
+    font-size: 22px;
+    color: #c6c6c6;
+}
+
+#graduation-title{
+    font-size: 20px;
+    color: #ABABAB;
+}
+
+#graduation-duration{
+    font-size: 18px;
+    color: #666666;
+}
+
+/* PROJECTS MODEL */
+
+.projects{
+    border-top: 1px solid #666666;
+    background: #171717;
+}
+
+.projects-section-title{
+    font-size: 2.3rem;
+    font-weight: 400;
+    padding: 4rem;
+    text-align: center;
+}
+
+.projectm-container{
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 2rem;
+    border-top: 1px solid #666666;
+    background: #171717;
+    padding: 3rem;
+}
+
+.projectm-container p{
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.projectm-wrapper{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+#projectm-img{
+    width: 30rem;
+    height: 15rem;
+    border: 2px solid #666666;
+}
+
+.projectm-text-button{
+    display: flex;
+    width: 50%;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#projectm-description{
+    display: flex;
+    text-align: start;
+    font-size: 1rem;
+}
+
+.container-projects{
+    height: 100%;
+}
+
+.projects-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    display: flex;
+    justify-content: center;
+    background: #0A0A0A;
+    border-top: 1px solid #666666;
+    max-height: 1000vh;
+    height: 100%;
+    max-width: 500rem;
+    width: 100%;
+    padding: 5rem 5rem;
+}
+
+.projects-title{
+    display: flex;
+    justify-content: center;
+}
+
+.projects-title p{
+    font-size: 40px;
+}
+
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.container-single-card{
+    border-radius: 5px;
+    background: #171717;
+    border: 1px solid #676767;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 31%;
+    min-height: 15rem;
+    max-height: 100%;
+    
+}
+
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.card-title p{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+
+.card-description p{
+    font-weight: 400;
+    color: #7e7e7e;
+}
+
+.card-link{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1.5rem;
+    font-size: 13px;
+}
+
+.card-link a{
+    text-decoration: none;
+}
+
+.visit, .repo{
+    height: 2rem;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 1.25rem 1rem;
+}
+
+.visit{
+    border: 0;
+    background: #2178DD;
+    text-decoration: none;
+}
+
+.visit a, .repo a{
+    text-decoration: none;
+    width: 100%;
+
+}
+
+.repo{
+    width: 100%;
+    border: 1px solid #676767;
+    background: #171717;
+}
+
+.this-page{
+    text-align: center;
+}
+
+.container-network{
+    background: #171717;
+    border-top: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    width: 100%;
+    max-width: 500rem;
+    height: 100%;
+    max-height: 50rem;
+}
+
+.network-wrapper{
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.interest, .together{
+    display: flex;
+    justify-content: center;
+}
+
+.interest p{
+    font-weight: 400;
+    color: #ABABAB;;
+    font-size: 32px
+}
+
+.together p{
+    font-weight: 500;
+    color: #fff;
+    font-size: 40px;
+}
+
+.together a{
+    color: #fff;
+}
+
+.page-footer{
+    background: #171717;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    margin: 0 auto;
+    border-top: 1px solid #666666;
+}
+
+.footer-wrapper p{
+    color: #ABABAB;
+}
+
+.source-code{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.source-code a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    gap: 1rem;
+    color: #ABABAB;
+}
+
+.about-page-wrapper{
+    height: 100vh;
+}
+
+.projects-page-wrapper{
+    height: auto;
+}
+
+@media (max-width: 1199px) {
+    .nav-link{
+        padding: 2rem 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1052px){
+    .betterclass-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #btc-img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .btc-text-button{
+        width: 100%;
+    }
+
+    .projectm-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projectm-img{
+        width: 100%;
+        height: 50%;
+    }
+
+    .projectm-text-button{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px){
+
+    body{
+        overflow: auto;
+    }
+
+    .container-navbar{
+        display: flex;
+        justify-content: center;
+    }
+
+    .left-options{
+        align-items: center;
+    }
+
+    .left-options p{
+        font-size: 22px;
+    }
+
+    .left-options img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .hamburger{
+        display: flex;
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+    }
+    .hamburger img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .close-icon{
+        display: flex;
+        position: absolute;
+        right: 2rem;
+        top: 1.5rem;
+    }
+    .close-icon img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .right-options{
+        display: none;
+    }
+
+    .navmenu-wrapper{
+        
+        position: absolute;
+        background: rgba(23, 23, 23, 75%);
+        top: 81px;
+        height: 100vh;
+        width: 100%;
+        backdrop-filter: blur(10px);
+    }
+
+    .container-navmenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .option-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        border-bottom: 1px solid #666666;
+    }
+
+    .option-wrapper p{
+        font-size: 22px;
+    }
+
+
+    .container-single-card{
+        max-width: 100%;
+        min-height: 20rem;
+        max-height: 100%;
+    }
+}
+
+
+@media (max-width: 768px){
+    .typing{
+        font-size: 30px;
+    }
+
+    .tech-icon-wrapper img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .image-wrapper img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .container-about{
+        padding: 5rem 3.5rem;
+    }
+
+    .text-wrapper p{
+        font-size: 16px;
+    }
+
+    .graduation-wrapper{
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .graduation-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .graduation-logo img{
+        height: 50px;
+    }
+
+    .grad-separator{
+        width: auto;
+        height: 1px;
+    }
+
+    #graduation-uni{
+        font-size: 18px;
+    }
+    
+    #graduation-title{
+        font-size: 16px;
+    }
+    
+    #graduation-duration{
+        font-size: 14px;
+    }
+
+    .projects-wrapper{
+        padding: 5rem 2rem;
+    }
+
+    .card-link{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .interest p{
+        font-size: 24px;
+    }
+
+    .together p{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .footer-wrapper{
+        padding: 2rem 2rem;
+    }
+
+    .name-year p, .source-code p{
+        font-size: 14px;
+    }
+
+}
+
+.tech-icon p{
+    font-size: 10px;
+}
+
+@media(max-width: 374px){
+    .name-year p, .source-code p{
+        font-size: 12px;
+    }
+
+    .source-code img{
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (min-width: 1024px){
+    .navmenu-wrapper{
+        display: none;
+    }
+    .container-navmenu{
+        display: none;
+    }
+
+}
+

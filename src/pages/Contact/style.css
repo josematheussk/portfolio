@@ -1,0 +1,99 @@
+body{
+    background: #0A0A0A;
+}
+
+.contact-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contact-wrapper{
+    background-color: #171717;
+    border: 1px solid #666666;
+    border-radius: 15px;
+    padding: 2rem;
+    height: auto;
+    width: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    width: 50%;
+}
+
+.contact-title{
+    font-size: 40px;
+}
+
+.contact-wrapper img{
+    height: 25px;
+}
+
+.medias-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.medias-wrapper p{
+    font-size: 14px;
+}
+
+.medias-wrapper a, .whatsapp-wrapper a, .linked-wrapper a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 30%;
+}
+
+.gmail-wrapper, .whatsapp-wrapper, .linked-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid #666666;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    background: #2b2b2b;
+}
+
+@media (max-width: 865px){
+    .contact-wrapper{
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .medias-wrapper{
+        gap: 0.5rem;
+    }
+
+    .medias-wrapper p{
+        font-size: 12px;
+    }
+
+    .medias-wrapper img{
+        height: 15px;
+    }
+
+    .gmail-wrapper, .whatsapp-wrapper, .linked-wrapper{
+        padding: 0.5rem;
+    }
+
+}
+
+@media (max-width: 375px){
+    .medias-wrapper p{
+        font-size: 10px;
+    }
+}
